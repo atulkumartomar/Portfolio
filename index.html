@@ -87,6 +87,46 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* New styles for project images and links */
+    .project-media {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .project-media img {
+      width: 220px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      display: block;
+    }
+    .project-links {
+      margin-top: 10px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #1a73e8;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .btn.secondary {
+      background: #f1f3f4;
+      color: #1a73e8;
+      border: 1px solid #dfe6f7;
+    }
+
+    @media (max-width:600px) {
+      .project-media img { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -120,6 +160,18 @@
           <li>Analyzed around 10K+ patient records to uncover peak hours, critical case load, and race distribution, improving decision-making for staffing and resource allocation.</li>
           <li>Created KPI-driven visual reports highlighting average treatment time, patient demographics, race distribution, and discharge trends, supporting data-backed improvements in ER efficiency by nearly 50%.</li>
         </ul>
+
+        <div class="project-media">
+          <!-- Replace the src paths with your actual image file locations -->
+          <img src="images/er_dashboard_thumbnail.png" alt="ER Dashboard screenshot">
+          <img src="images/er_kpi_chart.png" alt="ER KPI chart">
+        </div>
+
+        <div class="project-links">
+          <!-- Live project link and GitHub repo link (update URLs) -->
+          <a class="btn" href="https://drive.google.com/drive/folders/1B5o43lUG6xKTvNxjndVqvGnciu_mZPcp?usp=drive_link" target="_blank" rel="noopener">Go to the Project</a>
+        </div>
+
         <div class="tag-list">
           <span class="tag">Power BI</span>
           <span class="tag">DAX</span>
@@ -137,6 +189,16 @@
           <li>Analyzed 58K+ sales records to identify top-selling items, seasonal spikes, and underperforming categories, helping optimize sales and inventory decisions.</li>
           <li>Designed KPI-focused visuals covering total sales, total orders, reviews, and customer trends, enabling quick business insights for stakeholders with ~50% better visibility and reporting.</li>
         </ul>
+
+        <div class="project-media">
+          <img src="images/amazon_dashboard_thumbnail.png" alt="Amazon Dashboard screenshot">
+          <img src="images/amazon_sales_chart.png" alt="Amazon sales chart">
+        </div>
+
+        <div class="project-links">
+          <a class="btn" href="https://drive.google.com/drive/folders/1JO7mBLW4UFwxzTPZeY2gQSkw3_sb1yx1?usp=drive_link" target="_blank" rel="noopener">Go to the Project</a>
+        </div>
+
         <div class="tag-list">
           <span class="tag">Power BI</span>
           <span class="tag">Sales Analytics</span>
@@ -154,6 +216,16 @@
           <li>Cleaned and modeled constituency-level data to compare performance across years, parties, and alliances, enabling clear pattern and swing analysis.</li>
           <li>Built slicers and drill-down visuals for state, party, and year filters, helping users quickly understand trends, strongholds, and close contests.</li>
         </ul>
+		
+		<div class="project-media">
+          <img src="images/amazon_dashboard_thumbnail.png" alt="Election Result Dashboard">
+          <img src="images/amazon_sales_chart.png" alt="Election Result Dashboard 2">
+        </div>
+
+        <div class="project-links">
+          <a class="btn" href="https://drive.google.com/drive/folders/1VnvQVEugHDHpoUCDMaRxv2CnJE7FviuG?usp=drive_link" target="_blank" rel="noopener">Go to the Project</a>
+        </div>
+		
         <div class="tag-list">
           <span class="tag">Power BI</span>
           <span class="tag">Data Cleaning</span>
